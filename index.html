@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <link rel="stylesheet" href="./index.css">
+    <title>Animal-Wiki</title>
+</head>
+<body>
+    <div>
+        <div class="hero-imge"></div>
+        <div class="wrapper">
+            <header>
+                <a href="#" class="logo">Animal <span>Wiki</span></a>
+            <nav>
+                <svg class="close" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.6562 1.5625H2.34375C1.0498 1.5625 0 2.6123 0 3.90625V21.0938C0 22.3877 1.0498 23.4375 2.34375 23.4375H22.6562C23.9502 23.4375 25 22.3877 25 21.0938V3.90625C25 2.6123 23.9502 1.5625 22.6562 1.5625ZM18.5742 15.7471C18.8086 15.9814 18.8086 16.3623 18.5742 16.5967L16.5967 18.5742C16.3623 18.8086 15.9814 18.8086 15.7471 18.5742L12.5 15.2979L9.25293 18.5742C9.01855 18.8086 8.6377 18.8086 8.40332 18.5742L6.42578 16.5967C6.19141 16.3623 6.19141 15.9814 6.42578 15.7471L9.70215 12.5L6.42578 9.25293C6.19141 9.01855 6.19141 8.6377 6.42578 8.40332L8.40332 6.42578C8.6377 6.19141 9.01855 6.19141 9.25293 6.42578L12.5 9.70215L15.7471 6.42578C15.9814 6.19141 16.3623 6.19141 16.5967 6.42578L18.5742 8.40332C18.8086 8.6377 18.8086 9.01855 18.5742 9.25293L15.2979 12.5L18.5742 15.7471Z" fill="black"/>
+                </svg>
+                    
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+
+                <!-- svg maybe start -->
+
+                
+            </nav>
+            <svg class="navburger" width="15" height="15" viewBox="0 0 100 80" >
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+            </header>
+
+            <section class="hero">
+                <h1>Animals are such agreeable friends</h1>
+                <p class="subhead">An animal's eyes have the power to speak a great language.Until one has loved an animal, a part of one's soul remains unawakened.An animal's eyes have the power to speak a great language</p>
+
+            </section>
+
+            
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.navburger')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+
+        menu.addEventListener('click',()=>{
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click',()=>{
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>

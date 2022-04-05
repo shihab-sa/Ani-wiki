@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Quattrocento&display=swap');
+
+body {
+  margin: 1.5em;
+  font-family: 'Quattrocento', serif;
+}
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.hero-imge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./img/perfect\ .jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+
+  z-index: -1;
+  animation: inIndoLoad 2s forwards;
+  /* overflow: hidden; */
+}
+.logo {
+  color: white;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+a {
+  color: black;
+  padding: 0.75em 2em;
+  font-size: smaller;
+  display: block;
+}
+.close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+a:hover {
+  background: rgb(235, 229, 229);
+}
+svg {
+  width: 3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+  fill: white;
+}
+section.hero {
+  color:white;
+  height: 90vh;
+}
+h1 {
+  font-size: 4rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .navburger {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  svg.close {
+    display: none;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+  }
+  a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+  }
+  a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  .hero-imge {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  span {
+    color: red;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+@keyframes inIndoLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+  }
+}
+
+/* end of 1 gonta 20 m  */
+/* MORE INFO SECTION START 1 GONTA 23 M  */
+
+/* end of 1 34 m  */
